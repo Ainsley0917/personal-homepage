@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="zh-CN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学生主页</title>
+    <title>项目经历 - 学生主页</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -45,50 +45,42 @@
             border-radius: 4px;
         }
 
-        header {
-            background: url('header-background.jpg') no-repeat center center/cover;
+        section {
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
             color: #333;
-            text-align: center;
-            padding: 100px 20px;
+            margin-bottom: 5px;
         }
 
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-            color: #ffffff;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            color: #ffffff;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
+        .project p {
+            margin-left: 20px;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>欢迎来到我的主页</h1>
-        <p>一个充满热情的大学生，探索编程与技术的世界</p>
-    </header>
-
     <!-- Navigation Bar -->
     <nav>
         <ul>
+            <li><a href="index.html">主页</a></li>
             <li><a href="about.html">关于我</a></li>
             <li><a href="projects.html">项目经历</a></li>
             <li><a href="skills.html">技能</a></li>
@@ -97,10 +89,21 @@
         </ul>
     </nav>
 
-    <!-- Main Section -->
-    <section id="main">
-        <h2>欢迎来到我的个人主页</h2>
-        <p>这里是展示我学习和项目成果的地方，您可以通过导航栏来了解我的更多信息。</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>项目经历</h2>
+        <div class="project">
+            <h3>课程管理系统</h3>
+            <p>这是我在学校完成的一个小型项目，使用 HTML、CSS 和 JavaScript 构建的课程管理系统，帮助学生管理日常课程安排。</p>
+        </div>
+        <div class="project">
+            <h3>智能小车设计</h3>
+            <p>参加校内竞赛时，我和团队一起设计并实现了一款基于 Arduino 的智能小车，能够自动避障并沿着设定路线行驶。</p>
+        </div>
+        <div class="project">
+            <h3>个人主页网站</h3>
+            <p>这是我正在学习和开发的个人主页，使用 HTML、CSS，结合 GitHub Pages 进行部署，展示我的学习成果和项目经历。</p>
+        </div>
     </section>
 
     <!-- Footer -->
